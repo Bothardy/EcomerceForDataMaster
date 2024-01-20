@@ -23,3 +23,5 @@ def home(request):
 
     return render(request, 'store/home.html', {'product': product})
 
+class ProductView(TemplateView):
+    template_name = 'store/product.html'

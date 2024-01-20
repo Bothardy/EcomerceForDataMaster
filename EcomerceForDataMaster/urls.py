@@ -7,4 +7,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home.html'),  # Add this line for the root path
     path('store/', include('store.urls')),  # Include your app's URLs
+
+
 ]

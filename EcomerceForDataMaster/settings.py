@@ -27,8 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_URL = '/static/' #added for  html temp
+STATICFILES_DIRS = [BASE_DIR / "static"] #added for  html temp
 
 # Application definition
 
