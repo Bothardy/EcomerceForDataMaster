@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from .models import Product
+from django.views.generic import TemplateView
 
+class IndexView(TemplateView):
+    template_name = 'store/index.html'
 
 def product_list(request):
 
@@ -19,3 +22,4 @@ def home(request):
     product = Product.objects.first()
 
     return render(request, 'store/home.html', {'product': product})
+
