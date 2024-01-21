@@ -72,7 +72,7 @@
                                 <a href="{% static '404.html' %}" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="{% static 'contact.html' %}" class="nav-item nav-link">Contact</a>
+                        <a href="{% url 'profile.html' %}" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="{% static '' %}" class="btn btn-dark py-2 px-4 d-none d-lg-inline-block">Shop Now</a>
                 </div>
@@ -175,7 +175,7 @@
                     <div class="border p-4">
                         <p class="mb-2">Natural & Organic Shampoo</p>
                         <h2 class="fw-bold text-uppercase mb-4">Deals of the Day</h2>
-                        <h1 class="display-4 text-primary mb-4">$99.99</h1>
+                        <h1 class="display-4 text-primary mb-4">${{ product.price }}</h1>
                         <h5>Fresh Organic Shampoo</h5>
                         <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Etiam feugiat rutrum lectus sed auctor.</p>
