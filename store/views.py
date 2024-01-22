@@ -1,10 +1,6 @@
 from .models import Product
-from django.views.generic import TemplateView
 from django.shortcuts import render, get_object_or_404
 
-
-class IndexView(TemplateView):
-    template_name = 'store/index.html'
 
 
 def product_list(request):
@@ -27,13 +23,11 @@ def productpage(request):
 
 def home(request):
     # Fetch the first product from the database (you can modify this logic based on your needs)
-    product = Product.objects.first()
+    product = Product.objects.all()
 
     return render(request, 'store/home.html', {'product': product})
 
 
-class ProductView(TemplateView):
-    template_name = 'store/product.html'
 
 
 def profiluser(request):
