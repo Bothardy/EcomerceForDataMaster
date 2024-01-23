@@ -16,9 +16,9 @@
                 <a href="/store/product/" class="btn btn-dark py-2 px-4 me-3 animated slideInRight">Shop Now</a>
                 <a href="" class="btn btn-outline-dark py-2 px-4 animated slideInRight">Contact Us</a>
             </div>
-            <div class="col-lg-6">
-                <img class="img-fluid animated pulse infinite" src="{% static 'img/shampoo.png' %}" alt="">
-            </div>
+           <!-- <div class="col-lg-6">
+                <img class="img-fluid animated pulse infinite" src="{% static 'website/img/shampoo.png' %}" alt="">
+            </div> -->
         </div>
     </div>
 </div>
@@ -94,7 +94,10 @@
                     <div class="border p-4">
                         <p class="mb-2">Natural & Organic Shampoo</p>
                         <h2 class="fw-bold text-uppercase mb-4">Deals of the Day</h2>
+                        {% for product in product %}
                         <h1 class="display-4 text-primary mb-4">${{ product.price }}</h1>
+                                            {% endfor %}
+
                         <h5>Fresh Organic Shampoo</h5>
                         <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Etiam feugiat rutrum lectus sed auctor.</p>
@@ -398,6 +401,7 @@
     </div>
 </div>
 <!-- Blog End -->
+
 
 
   <!-- Newsletter Start -->
