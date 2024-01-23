@@ -32,7 +32,9 @@
 
     <!-- Template Stylesheet -->
     <link href="{% static 'website/css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'website/css/all.css' %} " rel="stylesheet">
+
+
+
 
 
 </head>
@@ -66,7 +68,7 @@
                 <div class="navbar-nav ms-auto">
                     <a href="{% url 'home.html' %}" class="nav-item nav-link active">Home</a>
                     <a href="{% url 'product.html' %}" class="nav-item nav-link">Products</a>
-                    <i class="fa badge fa-lg" value=100>&#xf290;</i>
+                    <a href="{% url 'auth.html' %}" class="fa badge fa-lg" value=100>&#xf290;</a>
 
                     <!--    <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -86,8 +88,9 @@
 
 
                 </div>
+
                 <div class="nav-item dropdown">
-                    <a href="{% url 'product.html' %}" class="btn btn-dark py-2 px-4 d-none d-lg-inline-block"
+                    <a href="{% url 'auth.html' %}" class="btn btn-dark py-2 px-4 d-none d-lg-inline-block"
                        data-bs-toggle="dropdown">Login</a>
                     <div class="dropdown-menu bg-light mt-2">
                         <a href="{% url 'profile.html' %}" class="dropdown-item">Paramètres et confidentialité</a>
@@ -96,8 +99,11 @@
                         <a href="{% url 'auth.html' %}" class="dropdown-item">404 Page</a>
 
 
+
                     </div>
+
                 </div>
+
             </div>
         </nav>
     </div>
@@ -188,6 +194,7 @@
 
 <!-- Template Javascript -->
 <script src="{% static 'website/js/main.js' %}"></script>
+<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 </body>
 
 </html>
