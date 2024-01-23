@@ -22,3 +22,8 @@ def profiluser(request):
     # Fetch the first product from the database (you can modify this logic based on your needs)
 
     return render(request, 'store/profile.html')
+
+def auth(request):
+    # Fetch the first product from the database (you can modify this logic based on your needs)
+
+    return render(request, 'store/auth.html')
